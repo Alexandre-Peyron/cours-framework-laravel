@@ -17,7 +17,7 @@ Le but de l'exercice est de comprendre les bases de blade: héritage, inclusion,
     <body>
         @section('sidebar')
             This is the master sidebar.
-        @endsection
+        @show
 
         <div class="container">
             @yield('content')
