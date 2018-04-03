@@ -57,9 +57,9 @@ Il est évidemment possible d'avoir des paramètres dynamiques au sein d'une rou
 Créez à présent une nouvelle route `/article/{index}` qui va afficher l'index du tableau précedent.
 
 Différentes contraintes à ajouter ensuite :
-    - `index` doit être obligatoirement un nombre
-    - si l'index n'existe pas, rediriger vers `/articles`
-    - donner une nom à la route
+- `index` doit être obligatoirement un nombre
+- si l'index n'existe pas, rediriger vers `/articles`
+- donner une nom à la route
     
     
 ### Paramètres avancés
