@@ -41,7 +41,7 @@ Dans notre cas, elle retourne une view avec un nom de template. Ce template se t
 Votre travail maintenant est de créer une nouvelle route `/articles` qui affiche une liste de titres d'articles.
 
 ```php
-// Placez ce tableau au début de votre action de controller
+// Placez ce tableau au début de votre action de controller, toujours dans web.php
 $articles = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "Vivamus id massa ac ex rutrum vestibulum."
@@ -57,9 +57,9 @@ Il est évidemment possible d'avoir des paramètres dynamiques au sein d'une rou
 Créez à présent une nouvelle route `/article/{index}` qui va afficher l'index du tableau précedent.
 
 Différentes contraintes à ajouter ensuite :
-    - `index` doit être un nombre
-    - si l'index n'existe pas, rediriger vers `/articles`
-    - donner une nom à la route
+- `index` doit être obligatoirement un nombre
+- si l'index n'existe pas, rediriger vers `/articles`
+- donner une nom à la route
     
     
 ### Paramètres avancés
