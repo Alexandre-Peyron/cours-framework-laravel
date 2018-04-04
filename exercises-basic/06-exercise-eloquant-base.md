@@ -38,4 +38,20 @@ Modifiez ensuite les seeds (str_slug()).
 
 Modifiez à présent les liens dans l'index ainsi que la fonction show, pour que vos URLs soient toutes belles !
 
+### Model
 
+Jusqu'à présent, si vous n'avez pas créé de Model, vous avez utilisé les méthodes de l'ORM
+
+```php
+<?php
+
+DB::table('articles')->get();
+```
+
+Pour plus de lisibilité, on peut créer un Model associé à chaque table de notre BDD.
+
+```bash
+php artisan make:model Article
+```
+
+Modifiez votre controller et les requêtes correspondantes afin d'utiliser le model.

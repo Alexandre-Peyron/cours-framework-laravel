@@ -12,7 +12,7 @@ Nous allons maintenant générer une nouvelle class pour avoir des données de t
 php artisan make:seeder ArticlesTableSeeder
 ```
 
-Le fichier ArticlesTableSeeder.php` vient d'être créé dans `database/seeds`.
+Le fichier ArticlesTableSeeder.php `vient d'être créé dans` database/seeds`.
 
 Ajoutez ceci à la méthode run :
 
