@@ -32,20 +32,22 @@ versionning pour la base de données.
 
 La première étape est de taper la commande suivante :
 
+> Par convention, Laravel met les noms de table au pluriel.
+
 ```bash
-php artisan make:migration create_article_table --create=article
+php artisan make:migration create_article_table --create=articles
 ```
 
-create_article_table sera le nom du fichier de migration.
+`create_article_table` sera le nom du fichier de migration.
 
-L'option --create pré-rempli la migration avec la création d'une nouvelle table.
+L'option `--create` pré-rempli la migration avec la création d'une nouvelle table.
 
 Un fichier a été créé : `database/migrations/*`
 
 Vous pouvez à présent, modifier le fichier comme suit :
 
 ```php
-Schema::create('article', function (Blueprint $table) {
+Schema::create('articles', function (Blueprint $table) {
     $table->increments('id');
     $table->string('title');
     $table->text('content');
@@ -54,7 +56,7 @@ Schema::create('article', function (Blueprint $table) {
 });
 ```
 
-Chaque ligne ajoute une propriété à notre table article.
+Chaque ligne ajoute une propriété à notre table articles.
 
 A noter que l'ID et les timestamps (created_at, updated_at) sont automatiquement gérés par Laravel.
 
@@ -66,12 +68,6 @@ php artisan migrate
 
 Vérifiez le contenu de votre base de données.
 
-
-### Premières requêtes
-
-Déplacez les actions de controller (/articles et /article/{index}) dans un [controller spécifique](https://laravel.com/docs/5.6/controllers).
-
-Ajouter de fausses données en base de données pour vos articles.
-
-Modifier vos actions de controller et vos vues pour afficher la liste des articles et un article spécifique depuis les valeurs de votre BDD.
-
+> En cas d'erreur à la génération. 
+> Du type :  Key too long error
+> Une solution est présente [ici](https://laravel-news.com/laravel-5-4-key-too-long-error)

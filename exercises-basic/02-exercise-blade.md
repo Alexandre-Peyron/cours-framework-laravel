@@ -1,4 +1,4 @@
-# Utilisation de Twig
+# Utilisation de Blade
 
 Première chose à faire, comme toujours, ouvrir la [documentation](https://laravel.com/docs/5.6/blade) !
 
