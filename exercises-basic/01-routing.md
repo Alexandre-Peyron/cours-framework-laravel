@@ -44,7 +44,7 @@ Votre travail maintenant est de créer une nouvelle route `/articles` qui affich
 // Placez ce tableau au début de votre action de controller, toujours dans web.php
 $articles = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Vivamus id massa ac ex rutrum vestibulum."
+    "Vivamus id massa ac ex rutrum vestibulum.",
     "Nam purus justo, porttitor vel urna id, blandit aliquam orci."
 ]
 ```
