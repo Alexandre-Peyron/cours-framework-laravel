@@ -59,3 +59,23 @@ if ($validator->fails()) {
 ```
 
 Ajoutez [l'affichage des erreurs](https://laravel.com/docs/master/validation#working-with-error-messages) dans le formulaire.
+
+
+
+### Edit
+
+Comme pour Create, créez une vue qui affiche un formulaire. 
+
+L'action du formulaire doit pointer vers la méthode `update` du controller.
+
+Le formulaire doit être pré-rempli avec les données de l'article sélectionné.
+
+
+### Update
+
+Validez les données soumises et mettre à jour l'article.
+
+
+### Destroy
+
+Supprimez l'article dont l'ID est passé en paramètre.
