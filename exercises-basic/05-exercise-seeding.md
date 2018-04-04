@@ -21,10 +21,12 @@ Ajoutez ceci à la méthode run :
 DB::table('articles')->insert([
     'title'      => str_random(10),
     'content'    => str_random(100),
-    'is_enabled' => (bool)random_int(0, 1) // PHP 7
+    'is_enabled' => (bool)random_int(0, 1) // PHP 7 - Aléatoirement true ou false
     //'is_enabled' => rand(0,1) == 1; // PHP 5
 ]);
 ```
+Trouvez un moyen de générer une date aléatoire (pour le created_at) entre aujourd'hui et les 10 derniers jours.
+
 Créez maintenant une boucle for pour générer une dixaine d'articles aléatoire.
 
 Avant de pouvoir mettre à jour notre BDD, il faut modifier le fichier `database/seeds/DatabaseSeeder.php`.
