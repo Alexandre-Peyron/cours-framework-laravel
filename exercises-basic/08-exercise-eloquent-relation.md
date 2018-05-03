@@ -65,7 +65,14 @@ class Comment extends Model
 
 Une fois vos modèles et données en place, modifiez la vue article.show afin d'afficher les commentaires.
 
+Ajoutez un formulaire pour commenter à la suite.
+Faites en sorte qu'à l'ajout d'un commentaire avec le formulaire, celui-ci soit directement associé à l'article en cours. 
+
 
 ### ManyToMany - Model Tag
 
 Même travail que précédemment, pour le un modèle Tag, associé aux articles.
+
+Modifiez la view article.create, pour ajouter la notion de Tag
+
+
