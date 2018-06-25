@@ -10,8 +10,13 @@ Par défaut, le Bundle PHPUnit est déjà présent dans le vendor d'un projet La
 
 Pour éxecuter les premiers tests, utilisez la commande suivante :
 
+
 ```bash
+// MacOS Linux
 ./vendor/bin/phpunit
+
+// Windows
+php ./vendor/bin/phpunit
 ```
 
 Normalement, 2 premiers tests vont s'exécuter.
