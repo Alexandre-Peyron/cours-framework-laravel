@@ -56,7 +56,7 @@ class Transaction extends Model
 Nouvelle erreur, pas de table, créons la migration :
 
 ```bash
-php artisan make:artisan create_categories_table --create=categories
+php artisan make:migration create_categories_table --create=categories
 ```
 
 Ajoutez un `$table->string('name');` à la migration.
