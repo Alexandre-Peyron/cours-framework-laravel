@@ -2,7 +2,7 @@
 
 Premier réflexe : la [documentation](https://laravel.com/docs/master) 
 
-L'objectif de cet exercice est d'installer et configurer un environnement de travail avec Symfony
+L'objectif de cet exercice est d'installer et configurer un environnement de travail avec Laravel
 
 
 ### PHP
