@@ -205,4 +205,102 @@ class ViewTransactionsTest extends TestCase
 Exécutez le test encore une fois.
 
 
-### Itération sur le code - View
+### Itération sur le code - Error rendering
+
+Nous avons une nouvelle erreur. Le problème ici, c'est qu'on affiche du HTML et c'est illisible dans la console.
+
+Pour cela, nous allons modifier la class `TestCase dont nos class de tests héritent.
+
+Ouvrez le fichier `tests/TestCase.php`
+
+Modifiez la ainsi :
+
+```php
+<?php
+
+namespace Tests;
+use Exception;
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use App\Exceptions\Handler;
+use Illuminate\Contracts\Debug\ExceptionHandler;
+
+abstract class TestCase extends BaseTestCase
+{
+    use CreatesApplication;
+    
+    protected function setUp ()
+    {
+        parent::setUp();
+        $this->disableExceptionHandling();
+    }
+    
+    protected function disableExceptionHandling ()
+    {
+        $this->oldExceptionHandler = app()->make(ExceptionHandler::class);
+        app()->instance(ExceptionHandler::class, new PassThroughHandler);
+    }
+    
+    protected function withExceptionHandling ()
+    {
+        app()->instance(ExceptionHandler::class, $this->oldExceptionHandler);
+        return $this;
+    }
+}
+
+class PassThroughHandler extends Handler
+{
+    public function __construct () {}
+    public function report (Exception $e) {}
+    public function render ($request, Exception $e)
+    {
+        throw $e;
+    }
+}
+
+```
+
+Pour explication, ici nous désactivons le rendu d'erreur par défaut pour afficher seulement l'erreur PHP.
+
+Cela rend la lecture beaucoup plus lisible
+
+
+### Itération sur le code - Routing et controller
+
+L'erreur est donc la suivante :
+
+```
+Symfony\Component\HttpKernel\Exception\NotFoundHttpException: 
+```
+
+Il manque la route.
+
+Dans le fichier web, ajoutez :
+
+```php
+Route::get('/transactions', 'TransactionsController@index');
+```
+
+Nouvelle erreur :
+
+```
+ReflectionException: Class App\Http\Controllers\TransactionsController does not exist
+```
+
+Le controller n'existe pas.
+
+Créez le :
+
+```bash
+php artisan make:controller TransactionsController
+```
+
+La méthode index n'existe pas.
+
+```php
+public function index()
+{
+
+}
+```
+
+A présent, créez l'action de controller et la vue associée jusqu'à ce que le test renvoie vrai.
