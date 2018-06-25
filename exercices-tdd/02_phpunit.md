@@ -16,7 +16,7 @@ Pour éxecuter les premiers tests, utilisez la commande suivante :
 ./vendor/bin/phpunit
 
 // Windows
-php ./vendor/bin/phpunit
+php vendor\phpunit\phpunit\phpunit
 ```
 
 Normalement, 2 premiers tests vont s'exécuter.
