@@ -81,3 +81,45 @@ public function store()
 Modifiez à présent le model pour rendre les champs "description" et "category_id" ajoutables.
 
 
+### Validation des champs
+
+Notre test est fonctionnel mais il est encore faillible.
+
+Notemment si on passe certains champs à `null`.
+
+Ajoutons un test à notre class
+
+```php
+/**
+ * @test
+ */
+public function itCannotCreateTransactionsWithoutADescription()
+{
+    $transaction = factory('App\Transaction')->make(['description' => null]);
+
+    $this->post('/transactions', $transaction->toArray())
+        ->assertSessionHasErrors('description');
+}
+```
+
+Modifions notre controller store pour vérifier les données :
+
+```php
+$this->validate(request(), [
+   'description' => 'required',
+]);
+```
+
+L'erreur est la suivante : Illuminate\Validation\ValidationException: The given data was invalid.
+                           
+Dans un sens, c'est ce que nous voulons.
+
+Modifions le test pour accepter ce genre d'erreur 
+
+```php
+$this->withExceptionHandling()->post('/transactions', $transaction->toArray())
+     ->assertSessionHasErrors('description');
+```
+
+Effectuez le même travail pour la catégorie en créant une nouvelle fonction de test.
+
