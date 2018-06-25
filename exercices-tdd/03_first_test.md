@@ -303,4 +303,57 @@ public function index()
 }
 ```
 
-A présent, créez l'action de controller et la vue associée jusqu'à ce que le test renvoie vrai.
+### Itération sur le code - View
+
+Il faut à présent créer l'action de controller et la view correspondante.
+
+Pour se faciliter la vie, nous allons utiliser les templates de bases de Laravel.
+
+Pour cela, activons l'authentification
+
+```bash
+php artisan make:auth
+```
+
+A présent dans `ressources/views`, créons un nouveau dossier `transactions`.
+Ainsi qu'un fichier `index.blade.php`
+
+```blade
+@extends('layouts/app')
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table">
+            plop
+            <thead>
+                <tr>
+                    <td>Date</td>
+                    <td>Description</td>
+                    <td>Montant</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($transactions as $transaction)
+                    <tr>
+                        <td>{{ $transaction->created_at->format('d-m-Y') }}</td>
+                        <td>{{ $transaction->description }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+</div>
+```
+
+et complétez l'action de controller 
+
+```php
+public function index()
+{
+    $transactions = Transaction::latest()->get();
+
+    return view('transactions.index', compact('transactions'));
+}
+```
+
+Le test doit être bon maintenant.
