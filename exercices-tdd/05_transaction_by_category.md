@@ -79,3 +79,40 @@ $factory->define(App\Category::class, function (Faker $faker) {
 ```
 
 A présent, le test doit être fonctionnel.
+
+
+### Refactoring
+
+Maintenant que notre test est ok. On peut essayer d'améliorer notre code.
+
+Ce `if exist` dans le controller n'est pas très joli.
+
+Optimisons ça !
+
+```php
+public function index(Category $category)
+{
+    $transactions = Transaction::byCategory($category)->get();
+
+    return view('transactions.index', compact('transactions'));
+}
+```
+
+C'est beau, mais pas fonctionnel, le test nous indique que la méthode `byCategory` n'existe pas.
+
+Pour la créer, il faut modifier le model et ajouter cette méthode :
+
+```php
+/**
+ * @param          $query
+ * @param Category $category
+ */
+public function scopeByCategory($query, Category $category)
+{
+    if ($category->exists) {
+        $query->where('category_id', $category->id);
+    }
+}
+```
+
+A présent, tout refonctionne.
