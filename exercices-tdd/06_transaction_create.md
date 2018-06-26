@@ -121,5 +121,5 @@ $this->withExceptionHandling()->post('/transactions', $transaction->toArray())
      ->assertSessionHasErrors('description');
 ```
 
-Effectuez le même travail pour la catégorie en créant une nouvelle fonction de test.
+Effectuez le même travail pour le champ `category_id` en créant une nouvelle fonction de test.
 
