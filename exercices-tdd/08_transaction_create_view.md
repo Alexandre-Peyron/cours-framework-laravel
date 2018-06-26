@@ -63,4 +63,6 @@ Ajoutez des seeders pour les catégories.
 
 Complétez le controller et la vue pour afficher la liste des catégories.
 
+N'oubliez pas le token de validation.
+
 Testez manuellement le formulaire et itérez jusqu'à ce qu'il fonctionne.
