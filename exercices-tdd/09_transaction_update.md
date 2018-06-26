@@ -46,3 +46,7 @@ class UpdateTransactionsTest extends TestCase
 Les étapes suivantes sont :
 - ajouter la route
 - modifier le controller
+
+### Validation
+
+Ajoutez la validation des données dans le controller et effectuez les différents tests comme pour l'ajout d'une Transaction.
