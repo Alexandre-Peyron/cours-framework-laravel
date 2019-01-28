@@ -1,6 +1,6 @@
 # Controller
 
-Qu'est-ce qu'on ouvre en premier ? La [documention](https://laravel.com/docs/5.6/controllers) ! (again and again and again)
+Qu'est-ce qu'on ouvre en premier ? La [documention](https://laravel.com/docs/master/controllers) ! (again and again and again)
 
 Jusqu'à présent, on a travaillé dans le fichier `routes/web.php`. Ce n'est pas très propre.
 
@@ -28,7 +28,7 @@ Dans les bonnes pratiques de Laravel, les actions sont réparties ainsi :
 | PUT/PATCH | /articles/{id}      | update  | articles.update  |
 | DELETE    | /articles/{id}      | destroy | articles.destroy |
 
-Dans votre fichier web.php, il n'y pas nécessaire ensuite d'importer chaque route de manière indépendante.
+Dans votre fichier web.php, il n'est pas nécessaire ensuite d'importer chaque route de manière indépendante.
 Mais la ligne suivante devrait faire le travail :
 
 ```php
@@ -39,4 +39,6 @@ Route::resource('articles', 'ArticleController');
 ```
 
 Nous allons maintenant travailler dans ce controller pour compléter chacune des route manquante.
+
+Mise en place de [notre première migration](./04-exercise-migration.md)
 
