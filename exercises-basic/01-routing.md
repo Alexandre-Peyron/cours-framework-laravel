@@ -2,8 +2,7 @@
 
 Premier réflexe : la [documentation](https://laravel.com/docs/master/routing). (again)
 
-L'objectif de cet exercice est de comprendre la mise en place et génération des routes avec Laravel
-ainsi que la création des views.
+L'objectif de cet exercice est de comprendre la mise en place des routes, leur génération ainsi que la création des views.
 
 > **Une route** : c'est le chemin/URL vers votre page.
 
@@ -48,7 +47,7 @@ $articles = [
     "Nam purus justo, porttitor vel urna id, blandit aliquam orci."
 ]
 ```
-
+> Dans un vrai projet, on n'utiliserait pas de valeur en dur comme ce tableau. On irait chercher les valeurs en base de données mais comme on ne sait pas encore utiliser la BDD avec Laravel, on procède ainsi pour le moment.
 
 ### Paramètres
 
@@ -59,7 +58,7 @@ Créez à présent une nouvelle route `/article/{index}` qui va afficher l'index
 Différentes contraintes à ajouter ensuite :
 - `index` doit être obligatoirement un nombre
 - si l'index n'existe pas, rediriger vers `/articles`
-- donner une nom à la route
+- donner un nom à la route
     
     
 ### Paramètres avancés
