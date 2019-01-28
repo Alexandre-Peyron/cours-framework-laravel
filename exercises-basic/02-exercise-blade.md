@@ -1,6 +1,6 @@
 # Utilisation de Blade
 
-La [documentation](https://laravel.com/docs/5.6/blade) ! (again and again)
+La [documentation](https://laravel.com/docs/master/blade) ! (again and again)
 
 Le but de l'exercice est de comprendre les bases de blade: héritage, inclusion, gestion des blocs. 
 
@@ -47,3 +47,4 @@ Il faut que votre layout soit le plus plus lisible possible.
 Autrement dit, vous allez devoir découper le template en différents blocs (par exemple: header, menu, footer)
 qui seront inclus dans votre layout.
  
+[Exercice suivant](./03-exercise-controller.md)
