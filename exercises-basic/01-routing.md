@@ -90,4 +90,5 @@ Créez à présent une nouvelle route `/articles/{year}/{tag}` dont `year` et `t
 
 Le but étant de filtrer les articles en fonction de l'année et/ou du tag renseigné(s) et d'afficher la liste correspondante.
 
+[Exercice sur les templates](./02-exercise-blade.md)
 
