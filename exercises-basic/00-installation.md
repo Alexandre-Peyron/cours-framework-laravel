@@ -92,4 +92,4 @@ Voici quand même les liens vers [Homestead](https://laravel.com/docs/master/hom
 
 
 
-Une fois, tout en place, accédez à votre site et passez à l'execice suivant.
+Une fois, tout en place, accédez à votre site via un navigateur puis passez à [l'exercice suivant](./01-routing.md).
