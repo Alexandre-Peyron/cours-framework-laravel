@@ -1,6 +1,6 @@
 # Utilisation de Blade
 
-Première chose à faire, comme toujours, ouvrir la [documentation](https://laravel.com/docs/5.6/blade) !
+La [documentation](https://laravel.com/docs/5.6/blade) ! (again and again)
 
 Le but de l'exercice est de comprendre les bases de blade: héritage, inclusion, gestion des blocs. 
 
