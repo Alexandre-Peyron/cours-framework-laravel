@@ -1,6 +1,6 @@
 # Routing
 
-Premier réflexe : la [documentation](https://laravel.com/docs/master/routing) 
+Premier réflexe : la [documentation](https://laravel.com/docs/master/routing). (again)
 
 L'objectif de cet exercice est de comprendre la mise en place et génération des routes avec Laravel
 ainsi que la création des views.
