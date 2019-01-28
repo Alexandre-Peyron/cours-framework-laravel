@@ -1,6 +1,6 @@
 # Controller
 
-La [documention](https://laravel.com/docs/5.6/controllers) !
+Qu'est-ce qu'on ouvre en premier ? La [documention](https://laravel.com/docs/5.6/controllers) ! (again and again and again)
 
 Jusqu'à présent, on a travaillé dans le fichier `routes/web.php`. Ce n'est pas très propre.
 
