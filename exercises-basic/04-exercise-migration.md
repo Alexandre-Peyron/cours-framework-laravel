@@ -71,3 +71,6 @@ Vérifiez le contenu de votre base de données.
 > En cas d'erreur à la génération. 
 > Du type :  Key too long error
 > Une solution est présente [ici](https://laravel-news.com/laravel-5-4-key-too-long-error)
+
+
+A présent ajoutons [des données dans notre BDD](./05-exercise-seeding.md)
