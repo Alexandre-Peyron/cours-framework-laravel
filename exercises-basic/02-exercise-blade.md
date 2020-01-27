@@ -36,7 +36,7 @@ Faites en sorte qu'elles héritent de notre layout.
 
 ### Les base - Inclusion
 
-Télécharger un template de site tout prêt. Des exemples [ici](https://startbootstrap.com/template-categories/all/) avec bootstrap.
+Télécharger un template de site tout prêt. Des exemples [ici](https://www.codeur.com/blog/templates-bootstrap-gratuits/) avec bootstrap.
 
 Mettez en place le template.
 
