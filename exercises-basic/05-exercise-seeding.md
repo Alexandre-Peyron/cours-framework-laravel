@@ -47,5 +47,7 @@ php artisan migrate:refresh --seed
 ```
 
 > En cas d'erreur, il est possible que vous ayez besoin de mettre à jour les autoloader :
-> `composer dump-autoload
+> `composer dump-autoload`
+
+Regardons maintenant comment [faire des requêtes à nos BDD](./06-exercise-eloquent-base.md)
 
