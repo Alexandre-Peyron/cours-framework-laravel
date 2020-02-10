@@ -50,7 +50,9 @@ Ce motif est utilisé par de nombreux frameworks pour applications web tels que 
 
 [Source Wikipédia](https://fr.wikipedia.org/wiki/Mod%C3%A8le-vue-contr%C3%B4leur)
 
-[En lien](https://github.com/domnikl/DesignPatternsPHP), la très belle liste des design pattern en PHP.
+> Liste des Design Patterns
+>
+> [En lien](https://github.com/domnikl/DesignPatternsPHP), la très belle liste des design pattern en PHP.
 
 ## Routing/Routage/Routeur
 
