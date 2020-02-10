@@ -70,25 +70,22 @@ Nouveau tableau d'articles :
 $articles = [
     [
         "title" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "year" => 2018,
-        "tags" => ["Lorem", "Ipsum"]
+        "year" => 2018
     ],
     [
         "title" => "Vivamus id massa ac ex rutrum vestibulum.",
-        "year" => 2018,
-        "tags" => ["Lorem", "Massa"]
+        "year" => 2018
     ],
     [
         "title" => "Nam purus justo, porttitor vel urna id, blandit aliquam orci.",
-        "year" => 2017,
-        "tags" => ["Ipsum", "Massa"]
+        "year" => 2017
     ],
 ]
 ```
 
-Créez à présent une nouvelle route `/articles/{year}/{tag}` dont `year` et `tag` sont optionnels.
+Créez à présent une nouvelle route `/articles/{year}/` avec `year`optionnel.
 
-Le but étant de filtrer les articles en fonction de l'année et/ou du tag renseigné(s) et d'afficher la liste correspondante.
+Le but étant de filtrer les articles en fonction de l'année (ou pas)et d'afficher la liste correspondante.
 
 [Exercice sur les templates](./02-exercise-blade.md)
 

@@ -55,3 +55,6 @@ php artisan make:model Article
 ```
 
 Modifiez votre controller et les requêtes correspondantes afin d'utiliser le model.
+
+
+Enchainons sur un premier travail sur [les formulaires](./07-exercise-form.md)

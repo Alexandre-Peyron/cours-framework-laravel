@@ -30,13 +30,13 @@ Plusieurs éléments à retenir ici :
 - la directive `@section`, comme son nom l'indique, crée une nouvelle section. Directement utilisable dans layout mais également dans les templates enfants.
 - la directive `@yield`, crée une nouvelle section utilisable que par les enfants. Cela permet, de se rendre compte tout de suite, visuellement de quels éléments devront être hériter obligatoirement.
 
-A présent, déplacez les vues "article" précédemment créées, dans un dossier `resources/views/article`. 
+A présent, pour chaque action de controller créées, créez les vues associées, dans un dossier `resources/views/article`. 
 Faites en sorte qu'elles héritent de notre layout.
 
 
 ### Les base - Inclusion
 
-Télécharger un template de site tout prêt. Des exemples [ici](https://startbootstrap.com/template-categories/all/) avec bootstrap.
+Télécharger un template de site tout prêt. Des exemples [ici](https://www.codeur.com/blog/templates-bootstrap-gratuits/) avec bootstrap.
 
 Mettez en place le template.
 

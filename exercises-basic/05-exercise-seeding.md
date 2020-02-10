@@ -27,7 +27,7 @@ DB::table('articles')->insert([
 ```
 Trouvez un moyen de générer une date aléatoire (pour le created_at) entre aujourd'hui et les 10 derniers jours.
 
-Créez maintenant une boucle for pour générer une dixaine d'articles aléatoire.
+Créez maintenant une boucle for pour générer une dizaine d'articles aléatoires.
 
 Avant de pouvoir mettre à jour notre BDD, il faut modifier le fichier `database/seeds/DatabaseSeeder.php`.
 Celui-ci centralise l'appel de tous les autres seed. A vous d'ajouter les `call` nécessaires dans sa méthode run.
@@ -47,5 +47,7 @@ php artisan migrate:refresh --seed
 ```
 
 > En cas d'erreur, il est possible que vous ayez besoin de mettre à jour les autoloader :
-> `composer dump-autoload
+> `composer dump-autoload`
+
+Regardons maintenant comment [faire des requêtes à nos BDD](./06-exercise-eloquent-base.md)
 
