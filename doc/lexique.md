@@ -1,6 +1,6 @@
 # Lexique
 
-## La documentation
+## :blue_book: La documentation
 
 ### Définition
 Pour chaque outil utilisé dans un projet web (IDE, Fremawork, librairie externe, gestionnaire de tâches...) une documentation existe.
@@ -12,7 +12,7 @@ C'est assez magique car cela explique comment fonctionne ce que vous voulez util
 ### inconvénient
 - aucun
 
-## Framework
+## :blue_book: Framework
 
 ### Définition
 En programmation informatique, un framework désigne un ensemble cohérent de composants logiciels structurels, qui sert à créer les fondations ainsi que les grandes lignes de tout ou d’une partie d'un logiciel (architecture). 
@@ -41,7 +41,7 @@ L'usage d'un framework intervient dans le cadre d'un développement spécifique 
 - [Symfony](https://symfony.com/)
 - [Laravel](https://laravel.com/)
 
-## Design Pattern
+## :blue_book: Design Pattern
 
 ### Définition
 
@@ -49,7 +49,7 @@ En informatique, et plus particulièrement en développement logiciel, un patron
 
 [Source Wikipédia](https://fr.wikipedia.org/wiki/Patron_de_conception)
 
-## MVC - Modèle-Vue-Controller
+## :blue_book: MVC - Modèle-Vue-Controller
 
 ### Définition
 
@@ -66,14 +66,14 @@ Ce motif est utilisé par de nombreux frameworks pour applications web tels que 
 >
 > [En lien](https://github.com/domnikl/DesignPatternsPHP), la très belle liste des design pattern en PHP.
 
-## Routing/Routage/Routeur
+## :blue_book: Routing/Routage/Routeur
 
 ### Définition
 Qu'il soit physique ou programmatique, un routeur à le même objectif : sélectionner un chemin dans un réseau.
 
 Dans le cadre de la programmation, il va lire une URL pour déterminer l'action à effectuer.
 
-## Controller
+## :blue_book: Controller
 
 ### Définition
 
@@ -81,7 +81,7 @@ Une fois le travail effectuer par le routeur, celui-ci va déterminer un action 
 
 Une action de controller est une fonction PHP créez par vous qui va lire les informations reçues de la requête HTTP, effectuer un traitement et renvoyer une réponse.
 
-## ORM
+## :blue_book: ORM
 
 ### Définition
 
@@ -105,7 +105,7 @@ A l'inverse, pour des besoins spécifiques, il peut devenir difficile d'utiliser
 - [Active Record](https://guides.rubyonrails.org/active_record_basics.html) : l'ORM de Ruby On Rails
 
 
-## Moteur de template
+## :blue_book: Moteur de template
 
 ### Définition
 
@@ -125,7 +125,7 @@ Un moteur de template permet de dissocier l'interface (HTML) de la partie progra
 - [Smarty](https://www.smarty.net/)
 
 
-## Gestionnaire de dépendances 
+## :blue_book: Gestionnaire de dépendances 
 
 ### Définition
 
@@ -149,6 +149,6 @@ Cet outil à pour but de centraliser la liste des dépendances (et leurs version
 - [Bundler](https://bundler.io/) : en Ruby
 
 
-## Bonus
+## :squirrel: Bonus
 
 [La RoadMap pour devenir un développeur Web](https://github.com/kamranahmedse/developer-roadmap)
