@@ -38,8 +38,10 @@ L'usage d'un framework intervient dans le cadre d'un développement spécifique 
 
 ### Exemples
 
-- [Symfony](https://symfony.com/)
-- [Laravel](https://laravel.com/)
+- [Symfony](https://symfony.com/) : PHP
+- [Laravel](https://laravel.com/) : PHP
+- [Django](https://www.djangoproject.com/): Python
+
 
 ## :blue_book: Design Pattern
 
