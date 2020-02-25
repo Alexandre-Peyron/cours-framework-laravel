@@ -1,5 +1,17 @@
 # Lexique
 
+## La documentation
+
+### Définition
+Pour chaque outil utilisé dans un projet web (IDE, Fremawork, librairie externe, gestionnaire de tâches...) une documentation existe.
+C'est asset magique car cela explique comment fonctionne ce que vous voulez utiliser.
+
+### Avantage
+- répond à vos questions
+
+### inconvénient
+- aucun
+
 ## Framework
 
 ### Définition
@@ -99,10 +111,42 @@ A l'inverse, pour des besoins spécifiques, il peut devenir difficile d'utiliser
 
 Un moteur de template permet de dissocier l'interface (HTML) de la partie programmation (PHP, JS...).
 
+### Pourquoi utiliser un moteur de template ?
+
+- Dans un modèle MVC, il permet de clairement dissocier la View (le design) du code métier
+- Structure votre code 
+- Gestion du cache et performances améliorées
+- Rend le code plus lisible (l'inclusion de balise <?php ?> peut devenir très lourde et encombrante)
+
 ### Exemples
 
 - [Blade](https://laravel.com/docs/5.8/blade) : Laravel
 - [Twig](https://twig.symfony.com/) : Symfony
+- [Smarty](https://www.smarty.net/)
+
+
+## Gestionnaire de dépendances 
+
+### Définition
+
+Dans un projet de développement, on est très souvent amené à utiliser des librairies externes, que ça soit en CSS, JS ou PHP. 
+Pour faciliter l'utilisation et la mise en place de ces dépendances, on utilise un gestionnaire de dépendance.
+Cet outil à pour but de centraliser la liste des dépendances (et leurs versions) un fichier pour ensuite pouvoir les télécharger/importer en une ligne de commande.
+
+### Avantages
+- centraliser la liste des dépendances et leurs versions (si plusieurs personnes travaillent sur le projet, elles auront toutes les mêmes dépendances)
+- facilite le téléchargement de ces ressources
+
+### inconvénient
+- si une dépendance est supprimée par son auteur, votre projet risque de ne plus fonctionner
+- les contraintes de versions et de dépendances, de dépendances, de dépendances peuvent parfois être problématique
+
+### Exemples
+
+- [Composer](https://getcomposer.org/) : en PHP
+- [NPM](https://www.npmjs.com/) : en JavaScript
+- [Yarn](https://yarnpkg.com/) : en JavaScript 
+- [Bundler](https://bundler.io/) : en Ruby
 
 
 ## Bonus
