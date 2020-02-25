@@ -4,7 +4,7 @@
 
 ### Définition
 Pour chaque outil utilisé dans un projet web (IDE, Fremawork, librairie externe, gestionnaire de tâches...) une documentation existe.
-C'est asset magique car cela explique comment fonctionne ce que vous voulez utiliser.
+C'est assez magique car cela explique comment fonctionne ce que vous voulez utiliser.
 
 ### Avantage
 - répond à vos questions
